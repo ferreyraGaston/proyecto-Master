@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: url(https://github.com/supahfunk/gradientwaves-svg/blob/master/dist/img/bg-gradient-wave.png?raw=true) repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagono {
+    position: absolute;
+    left:50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    width: 470px;
+    height: 0;
+    border-top: 200px solid rgba(171, 249, 228,.3);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+.hexagono:after {
+    content: '';
+    position: absolute;
+    left:50%;
+    top: -300px;
+    transform: translate(-50%,-50%);
+    width: 270px;
+    height: 0;
+    border-bottom: 200px solid rgba(171, 249, 228,.3);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    position: absolute;
+}
+
+form h3 {
+    font-weight: bold;
+    color: rgba(255, 255, 255, .8);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    background: rgba(255, 255, 255, .7);
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, .3);
+}
+
+form p {
+    color: rgba(0, 0, 0, .7);
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+form .far,
+form .fas {
+    color: rgba(0, 0, 0, .7);
+    margin-right: 10px;
+}
+
+form button {
+    height: 35px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #023C6D;
+    outline: none;
+    background: rgba(21, 84, 139, .6);
+    color: rgba(255, 255, 255, .8);
+    transition-duration: 500ms;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #094579;
+    transition-duration: 500ms;
+}
+
+svg {
+    width: 100vw;
+    height: 100vh;
+}
+
+svg.path path {
+    stroke: none;
+}
+
+svg.stroke path {
+    fill: none;
+    stroke-width: 1px;
+}
+
+.circle {
+    fill: #fff;
+}

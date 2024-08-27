@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-image: url(img/paisaje.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1px);
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 60px 20px;
+    width: 400px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.74);
+    border-radius: 20px;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgba(0, 0, 0, .8);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+form i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 21px;
+    color: #ce181e;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .7);
+}
+
+form p {
+    font-size: 15px;
+    color: #ce181e;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    margin: 20px 0;
+}
+
+.social-buttons {
+    margin-bottom: 20px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.fb {
+    background-color: #3b5998;
+    box-shadow: inset -1px 1px 7px 0px rgba(0, 0, 0, 0.74);
+}
+
+.ig {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    box-shadow: inset -1px 1px 7px 0px rgba(0, 0, 0, 0.74);
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    background: #ce181e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #D11E24;
+}
